@@ -1,5 +1,5 @@
-function hideWhenClicked(event) {
-  $(event.target).hide();
-}
+const to_hide = document.getElementById('hide_this')
 
-$('hide_this').click(hideWhenClicked)
+to_hide.addEventListener('click', function hideWhenClicked(element) {
+  document.getElementById('hide_this').style.display = 'none';
+});
